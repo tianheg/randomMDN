@@ -1,0 +1,13 @@
+en-us/web/javascript/closures
+en-us/web/javascript/data_structures
+en-us/web/javascript/enumerability_and_ownership_of_properties
+en-us/web/javascript/equality_comparisons_and_sameness
+en-us/web/javascript/eventloop
+en-us/web/javascript/guide
+en-us/web/javascript/
+en-us/web/javascript/inheritance_and_the_prototype_chain
+en-us/web/javascript/javascript_technologies_overview
+en-us/web/javascript/language_overview
+en-us/web/javascript/memory_management
+en-us/web/javascript/reference
+en-us/web/javascript/typed_arrays

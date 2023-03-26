@@ -1,0 +1,16 @@
+en-us/web/accessibility/accessibility_and_spacial_patterns
+en-us/web/accessibility/accessibility_colon__what_users_can_to_to_browse_safely
+en-us/web/accessibility/accessible_dynamic_content
+en-us/web/accessibility/an_overview_of_accessible_web_applications_and_widgets
+en-us/web/accessibility/architecture
+en-us/web/accessibility/aria
+en-us/web/accessibility/cognitive_accessibility
+en-us/web/accessibility/community
+en-us/web/accessibility/faq
+en-us/web/accessibility/
+en-us/web/accessibility/information_for_web_authors
+en-us/web/accessibility/keyboard-navigable_javascript_widgets
+en-us/web/accessibility/mobile_accessibility_checklist
+en-us/web/accessibility/seizure_disorders
+en-us/web/accessibility/understanding_colors_and_luminance
+en-us/web/accessibility/understanding_wcag

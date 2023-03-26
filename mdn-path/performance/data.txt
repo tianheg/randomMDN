@@ -1,0 +1,14 @@
+en-us/web/performance/animation_performance_and_frame_rate
+en-us/web/performance/critical_rendering_path
+en-us/web/performance/css_javascript_animation_performance
+en-us/web/performance/dns-prefetch
+en-us/web/performance/fundamentals
+en-us/web/performance/how_browsers_work
+en-us/web/performance/how_long_is_too_long
+en-us/web/performance/
+en-us/web/performance/lazy_loading
+en-us/web/performance/navigation_and_resource_timings
+en-us/web/performance/optimizing_startup_performance
+en-us/web/performance/performance_budgets
+en-us/web/performance/rum-vs-synthetic
+en-us/web/performance/understanding_latency
