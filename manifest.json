@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
   "name": "randomMDN",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open random MDN sites",
   "browser_specific_settings": {
     "gecko": {
-      "id": "randommdn@tianhegao.com"
+      "id": "random-mdn@tianhegao.com"
     }
   },
   "icons": {

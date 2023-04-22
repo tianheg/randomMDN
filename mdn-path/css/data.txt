@@ -115,6 +115,7 @@ en-us/web/css/_colon_paused
 en-us/web/css/_colon_picture-in-picture
 en-us/web/css/_colon_placeholder-shown
 en-us/web/css/_colon_playing
+en-us/web/css/_colon_popover-open
 en-us/web/css/_colon_read-only
 en-us/web/css/_colon_read-write
 en-us/web/css/_colon_required
@@ -640,6 +641,7 @@ en-us/web/css/pseudo-classes
 en-us/web/css/pseudo-elements
 en-us/web/css/quotes
 en-us/web/css/ratio
+en-us/web/css/ray
 en-us/web/css/reference
 en-us/web/css/rem
 en-us/web/css/repeat
@@ -752,7 +754,6 @@ en-us/web/css/transition-property
 en-us/web/css/transition-timing-function
 en-us/web/css/transition
 en-us/web/css/translate
-en-us/web/css/translation-value
 en-us/web/css/tutorials
 en-us/web/css/type_selectors
 en-us/web/css/unicode-bidi

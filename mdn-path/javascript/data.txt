@@ -2,7 +2,7 @@ en-us/web/javascript/closures
 en-us/web/javascript/data_structures
 en-us/web/javascript/enumerability_and_ownership_of_properties
 en-us/web/javascript/equality_comparisons_and_sameness
-en-us/web/javascript/eventloop
+en-us/web/javascript/event_loop
 en-us/web/javascript/guide
 en-us/web/javascript/
 en-us/web/javascript/inheritance_and_the_prototype_chain

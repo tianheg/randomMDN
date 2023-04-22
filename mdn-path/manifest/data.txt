@@ -3,6 +3,7 @@ en-us/web/manifest/categories
 en-us/web/manifest/description
 en-us/web/manifest/display
 en-us/web/manifest/display_override
+en-us/web/manifest/file_handlers
 en-us/web/manifest/icons
 en-us/web/manifest/id
 en-us/web/manifest/
