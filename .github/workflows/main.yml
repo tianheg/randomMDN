@@ -1,21 +1,30 @@
-name: Sign addon
+name: Build and Sign addon
 
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
 
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: trmcnvn/firefox-addon@v1
+      - uses: actions/checkout@v3
+
+      - name: "web-ext build"
+        id: web-ext-build
+        uses: kewisch/action-web-ext@v1
         with:
-          # uuid is only necessary when updating an existing addon,
-          # omitting it will create a new addon
-          uuid: '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}'
-          xpi: build/my-addon.xpi
-          manifest: ../manifest.json
-          api-key: ${{ secrets.FIREFOX_API_KEY }}
-          api-secret: ${{ secrets.FIREFOX_API_SECRET }}
+          cmd: build
+          source: .
+          filename: "{name}-{version}.xpi"
+          ignoreFiles: '[ "package.json","pnpm-lock.yaml","yarn.lock" ]'
+
+      - name: "Upload Artifact"
+        uses: actions/upload-artifact@v3
+        with:
+          name: target.xpi
+          path: ${{ steps.web-ext-build.outputs.target }}
