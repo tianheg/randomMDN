@@ -1,4 +1,4 @@
-name: Build and Sign addon
+name: Build Firefox addon
 
 on:
   workflow_dispatch:
