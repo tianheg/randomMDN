@@ -1,5 +1,4 @@
 en-us/web/html/attributes
-en-us/web/html/block-level_elements
 en-us/web/html/constraint_validation
 en-us/web/html/content_categories
 en-us/web/html/cors_enabled_image
@@ -7,7 +6,6 @@ en-us/web/html/date_and_time_formats
 en-us/web/html/element
 en-us/web/html/global_attributes
 en-us/web/html/
-en-us/web/html/inline_elements
 en-us/web/html/microdata
 en-us/web/html/microformats
 en-us/web/html/quirks_mode_and_standards_mode

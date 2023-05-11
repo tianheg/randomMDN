@@ -651,6 +651,7 @@ en-us/web/api/pluginarray
 en-us/web/api/pointer_events
 en-us/web/api/pointer_lock_api
 en-us/web/api/pointerevent
+en-us/web/api/popover_api
 en-us/web/api/popstateevent
 en-us/web/api/positionsensorvrdevice
 en-us/web/api/presentation
@@ -668,7 +669,6 @@ en-us/web/api/progressevent
 en-us/web/api/promiserejectionevent
 en-us/web/api/proximity_events
 en-us/web/api/publickeycredential
-en-us/web/api/publickeycredentialrequestoptions
 en-us/web/api/push_api
 en-us/web/api/pushevent
 en-us/web/api/pushmanager
@@ -724,8 +724,6 @@ en-us/web/api/rtcpeerconnection
 en-us/web/api/rtcpeerconnectioniceerrorevent
 en-us/web/api/rtcpeerconnectioniceevent
 en-us/web/api/rtcremoteoutboundrtpstreamstats
-en-us/web/api/rtcrtpcapabilities
-en-us/web/api/rtcrtpcodeccapability
 en-us/web/api/rtcrtpcodecparameters
 en-us/web/api/rtcrtpcontributingsource
 en-us/web/api/rtcrtpencodingparameters
@@ -998,3 +996,5 @@ en-us/web/api/wakelock
 en-us/web/api/wakelocksentinel
 en-us/web/api/waveshapernode
 en-us/web/api/web_animations_api
+en-us/web/api/web_audio_api
+en-us/web/api/web_authentication_api

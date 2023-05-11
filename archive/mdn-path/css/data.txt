@@ -4,11 +4,6 @@ en-us/web/css/-moz-force-broken-image-icon
 en-us/web/css/-moz-image-rect
 en-us/web/css/-moz-image-region
 en-us/web/css/-moz-orient
-en-us/web/css/-moz-outline-radius-bottomleft
-en-us/web/css/-moz-outline-radius-bottomright
-en-us/web/css/-moz-outline-radius-topleft
-en-us/web/css/-moz-outline-radius-topright
-en-us/web/css/-moz-outline-radius
 en-us/web/css/-moz-user-focus
 en-us/web/css/-moz-user-input
 en-us/web/css/-webkit-border-before
@@ -53,8 +48,6 @@ en-us/web/css/_colon_-moz-handler-blocked
 en-us/web/css/_colon_-moz-handler-crashed
 en-us/web/css/_colon_-moz-handler-disabled
 en-us/web/css/_colon_-moz-last-node
-en-us/web/css/_colon_-moz-list-bullet
-en-us/web/css/_colon_-moz-list-number
 en-us/web/css/_colon_-moz-loading
 en-us/web/css/_colon_-moz-locale-dir_ltr
 en-us/web/css/_colon_-moz-locale-dir_rtl
@@ -131,6 +124,8 @@ en-us/web/css/_colon_visited
 en-us/web/css/_colon_where
 en-us/web/css/_doublecolon_-moz-color-swatch
 en-us/web/css/_doublecolon_-moz-focus-inner
+en-us/web/css/_doublecolon_-moz-list-bullet
+en-us/web/css/_doublecolon_-moz-list-number
 en-us/web/css/_doublecolon_-moz-page-sequence
 en-us/web/css/_doublecolon_-moz-page
 en-us/web/css/_doublecolon_-moz-progress-bar
@@ -385,7 +380,6 @@ en-us/web/css/css_pages
 en-us/web/css/css_positioning
 en-us/web/css/css_ruby
 en-us/web/css/css_scroll_snap
-en-us/web/css/css_scroll_snap_points
 en-us/web/css/css_scrollbars
 en-us/web/css/css_selectors
 en-us/web/css/css_shapes
@@ -521,6 +515,7 @@ en-us/web/css/letter-spacing
 en-us/web/css/line-break
 en-us/web/css/line-height-step
 en-us/web/css/line-height
+en-us/web/css/line-style
 en-us/web/css/list-style-image
 en-us/web/css/list-style-position
 en-us/web/css/list-style-type
@@ -602,6 +597,7 @@ en-us/web/css/overflow-wrap
 en-us/web/css/overflow-x
 en-us/web/css/overflow-y
 en-us/web/css/overflow
+en-us/web/css/overflow_value
 en-us/web/css/overscroll-behavior-block
 en-us/web/css/overscroll-behavior-inline
 en-us/web/css/overscroll-behavior-x

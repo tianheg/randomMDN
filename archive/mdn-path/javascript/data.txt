@@ -10,4 +10,3 @@ en-us/web/javascript/javascript_technologies_overview
 en-us/web/javascript/language_overview
 en-us/web/javascript/memory_management
 en-us/web/javascript/reference
-en-us/web/javascript/typed_arrays

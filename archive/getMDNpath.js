@@ -18,7 +18,7 @@ const readInterface = readline.createInterface({
 const lines = []
 
 readInterface.on('line', function (line) {
-  lines.push('https://developer.mozilla.org/' + line)
+  lines.push(line)
 })
 
 readInterface.on('close', function () {
