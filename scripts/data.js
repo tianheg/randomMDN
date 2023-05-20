@@ -1,21 +1,43 @@
 import fs from 'node:fs'
-import bcd from '@mdn/browser-compat-data' assert { type: 'json' }
+import got from 'got'
 
-const mdnUrls = []
-// console.log(bcd)
+const allDocUrls = []
 
-// api, css, html, http, javascript, mathml, svg, webdriver, webextensions
+/**
+ * Sitemap Handling
+ */
+const SITEMAP_URL =
+  'https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz'
 
-function getUrls(obj) {
-  if (obj && typeof obj === 'object') {
-    if (obj.mdn_url) {
-      mdnUrls.push(obj.mdn_url)
-    }
-    Object.values(obj).forEach(getUrls)
+/**
+ * Get all MDN Web Documentation URLs
+ *   - fetch MDN sitemap
+ *   - unzip response
+ *   - filter out non-web-documentation URLs
+ *
+ * @returns {Promise} A random URL from the MDN sitemap
+ */
+const getDocUrls = async () => {
+  const SITEMAP_URL_REGEX = /<loc>(.*?)<\/loc>/g
+  const { body } = await got(SITEMAP_URL, {
+    responseType: 'buffer',
+    headers: {
+      'accept-encoding': 'gzip',
+    },
+  })
+  const sitemap = body.toString()
+
+  let match
+  while ((match = SITEMAP_URL_REGEX.exec(sitemap))) {
+    allDocUrls.push(match[1])
   }
-}
-getUrls(bcd)
 
-console.log(mdnUrls)
+  return allDocUrls
+}
+
+await getDocUrls()
+
+console.log(allDocUrls)
+
 // write to data.txt file
-fs.writeFileSync('./scripts/data.txt', mdnUrls.join('\n'))
+fs.writeFileSync('./scripts/data.txt', allDocUrls.join('\n'))
