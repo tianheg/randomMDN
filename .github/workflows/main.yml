@@ -57,18 +57,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-
-      - name: "web-ext build"
-        id: web-ext-build
-        uses: kewisch/action-web-ext@v1
-        with:
-          cmd: build
-          source: .
-          filename: "{name}-{version}.xpi"
-          ignoreFiles: '[ "package.json","pnpm-lock.yaml","yarn.lock" ]'
-
-      - name: "Upload Artifact"
-        uses: actions/upload-artifact@v3
-        with:
-          name: target.xpi
-          path: ${{ steps.web-ext-build.outputs.target }}
