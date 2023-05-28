@@ -1,11 +1,9 @@
 import fs from 'node:fs'
+import rl from 'readline'
 import got from 'got'
 
-const allDocUrls = []
+let allDocUrls = ''
 
-/**
- * Sitemap Handling
- */
 const SITEMAP_URL =
   'https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz'
 
@@ -29,7 +27,7 @@ const getDocUrls = async () => {
 
   let match
   while ((match = SITEMAP_URL_REGEX.exec(sitemap))) {
-    allDocUrls.push(match[1])
+    allDocUrls = allDocUrls.concat(match[1] + ',')
   }
 
   return allDocUrls
@@ -37,7 +35,18 @@ const getDocUrls = async () => {
 
 await getDocUrls()
 
-console.log(allDocUrls)
+// read randomNewTab.js first line
+const readInterface = rl.createInterface({
+  input: fs.createReadStream('./randomNewTab.js'),
+  output: process.stdout,
+  console: false,
+})
 
-// write to data.json file
-fs.writeFileSync('data.json', JSON.stringify(allDocUrls))
+const lines = []
+
+readInterface.on('line', (line) => lines.push(line))
+
+readInterface.on('close', () => {
+  lines.splice(0, 1, `const MDN = [${allDocUrls.slice(0, -1).split(',').map((url) => `'${url}'`).join(', ')}]`)
+  fs.writeFileSync('./randomNewTab.js', lines.join('\n'))
+})
