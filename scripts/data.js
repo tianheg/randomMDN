@@ -39,5 +39,5 @@ await getDocUrls()
 
 console.log(allDocUrls)
 
-// write to data.txt file
-fs.writeFileSync('./scripts/data.txt', allDocUrls.join('\n'))
+// write to data.json file
+fs.writeFileSync('data.json', JSON.stringify(allDocUrls))
