@@ -16,3 +16,4 @@ If `default_popup`'s value is `https://.../`, when clicking the addon icon, the 
 ## Acknowledgments
 
 - https://github.com/daiyi/random-wikipedia-newtab-extension
+- https://github.com/random-mdn/random-mdn-bot
